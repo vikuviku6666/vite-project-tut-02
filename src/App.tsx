@@ -2,6 +2,8 @@ import ListGroup from './components/ListGroup';
 import Alert from './components/Alert';
 import { Fragment, useState } from 'react';
 import Button from './components/Button';
+import CancelButton from './components/CancelButton';
+import './App.css';
 
 function App() {
 	const items = ['New York', 'London', 'San Francisco', 'Tokyo', 'Paris'];
@@ -26,6 +28,7 @@ function App() {
 			<div>
 				<ListGroup items={items} heading='Cities' onSelectedItem={handleSelectedItem} />
 			</div>
+			<CancelButton/>
 		</Fragment>
 	);
 }
